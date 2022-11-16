@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -6,6 +7,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;900&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/a098c75647.js" crossorigin="anonymous"></script>
         <title>Portfolio</title>
         <meta charset="UTF-8"/>
     </head>
@@ -13,17 +15,20 @@
         <section class="hero">
             <nav>
                 <img class="logo" src="src/images/logo.png" alt="Jarrod Wandrey's logo"/>
-                <ul>
-                    <li>About me</li>
-                    <li>Projects</li>
-                    <li>Contact</li>
+                <ul id="nav-list">
+                    <li><a href="#about-me">About me</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
+                <button class="hamburger" id="hamburger">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
             </nav>
             <div class="hero-area">
                 <div class="hero-text">
                     <h1>Jarrod Wandrey</h1>
                     <p>Gradute at Northern Illinois Univeristy</p>
-                    <div class="button">About me</div>
+                    <div class="button"><a href="#about-me">About me</a></div>
                 </div>
                 <div class="socials">
                     <div><a href="https://www.linkedin.com/in/jarrod-wandrey-53a2a6173/" class="social" target="_blank">
@@ -35,43 +40,47 @@
                 </div>
             </div>
         </section>
-        <section class="sub-section">
+        <section class="sub-section" id="about-me">
             <div class="information">
                 <h2>About me</h2>
-                <p>blah blah blah</p>
+                <p>An eager computer science graduate with Python and C++ experience. Showcasing determination and
+                    problem-solving skills to pursue goals and meet deadlines. With a passion to acquire deeper knowledge
+                    and efficiency.</p>
             </div>
             <div class="headshot-container">
                 <img class="headshot" src="/src/images/headshot.jpg" alt="Jarrod Wandrey Headshot"/>
             </div>
         </section>
-        <section class="sub-section-alt">
+        <section class="sub-section-alt" id="projects">
             <h2>Projects</h2>
             <div class="project-container">
                 <div class="project-card">
                     <img class="project-image1" src="src/images/projectoneimg.png" alt="Jarrod's project one">
                     <h3>DND NPC Generator</h3>
-                    <p class="subtext">Uses Tkinter, BeatifulSoup,and playwrite to gather information and display on a small window Program generates a file full of DnD NPC names and descriptions, then the user can pull from the list as they please. I Created this to get a better understanding of basic python, as well as exposure to addtional libraries</p>
+                    <p class="subtext">Uses Tkinter, BeatifulSoup,and playwrite to gather information and display on a small window Program generates a file full of DnD NPC names and descriptions, then the user can pull from the list as they please. </p>
                     <hr/>
-                    <p class="subtext"><a href="https://github.com/JarrodWandrey/NPC_Gen" target="_blank">View here</a></p>
+                    <p class="subtext"><a class="project-link" href="https://github.com/JarrodWandrey/NPC_Gen" target="_blank">View here</a></p>
                 </div>
                 <div class="project-card">
                     <img class="project-image2" src="src/images/projecttwoimg.png" alt="Jarrod's project two">
                     <h3>YouTube Link downloader</h3>
                     <p class="subtext">Program to check the clipboard for youtube links, then download them (mp3 or webm) if the user decides</p>
                     <hr/>
-                    <p class="subtext"><a href="https://github.com/JarrodWandrey/YT_LinkDL" target="_blank">View here</a></p>
+                    <p class="subtext"><a class="project-link" href="https://github.com/JarrodWandrey/YT_LinkDL" target="_blank">View here</a></p>
                 </div>
                 <div class="project-card">
                     <img class="project-image3" src="src/images/projectthreeimg.png" alt="Jarrod's project three">
                     <h3>Portfolio website</h3>
                     <p class="subtext">A portfolio website created to showcase HTML and CSS knowledge</p>
                     <hr/>
-                    <p class="subtext"><a href="https://github.com/JarrodWandrey/YT_LinkDL" target="_blank">View here</a></p>
+                    <p class="subtext"><a class="project-link" href="https://github.com/JarrodWandrey/Portfolio" target="_blank">View here</a></p>
                 </div>
             </div>
         </section>
-        <footer></footer>
-
+        <footer id="contact">
+            <h2>Contact me</h2>
+            <p>Email: jarrodwandrey9@gmail.com</p>
+        </footer>
 
         <script src="src/app.js"></script>
     </body>
