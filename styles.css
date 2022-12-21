@@ -1,0 +1,229 @@
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    margin: 0;
+}
+
+/*All section tags in the index.hmtl file will have format below */
+section {
+    height: 550px;
+    background-color: white; /*section background color to white*/
+}
+
+/*any section with the class 'hero' will have this information overridden
+  other things that are not overidden are simply inherited*/
+.hero {
+    background-color: #1c1d25; /*by setting the .hero background color to a hex of dark blue, any section with the class hero will instead be dark blue from white*/
+    height: 100vh; /*instead of using px(pixels) I use vh which is view height, this colors the whole screen that is visable before scrolling*/
+    color: white;
+    font-size: 40px;
+}
+
+footer {
+    color: white;
+    background-color: black;
+    text-align: center;
+    padding: 80px;
+}
+
+nav {
+    display: flex; /*displat flex allows for the navbar to be inline with each other*/
+    justify-content: space-between; /*justify context allows for the spacing to be adjusted, where space between puts a equal amount of space between each of the items*/
+}
+
+ul {
+    display: flex;
+    list-style-type: none; /*gets rid of the bullet points to our list of*/
+    width: 500px;
+    justify-content: space-around;
+    font-size: 30px;
+}
+
+ul.show {
+    display: block;
+}
+
+li {
+    /* width: 200px; */
+    text-decoration: none; /*gets rid of the bullet points to our list of*/
+}
+
+h1 {
+    font-size: 90px;
+    margin: 0;
+}
+
+h2 {
+    font-size: 50;
+
+}
+
+p {
+    margin: 10px;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.subtext {
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.hero-text {
+    margin-left: 80px;
+    margin-bottom: 200px;
+}
+
+.hero-area {
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.button {
+    width: 200px;
+    height: 45px;
+    border-radius: 30px;
+    background-color: coral;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 400;
+    padding-top: 5px;
+    margin-top: 20px;
+}
+
+.button:hover {
+    background-color: #ef744b;
+}
+
+.button:active {
+    background-color: #A9A9A9;
+    color: #808080;
+}
+
+.socials {
+    padding-bottom: 200px;
+}
+
+.social {
+    margin: 10px;
+}
+
+.logo {
+    height: 80px;
+    margin: 30px;
+}
+
+.sub-section {
+    display: flex;
+    justify-content: space-around;
+    padding: 80px;
+}
+
+.sub-section-alt {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 80px;
+
+}
+
+.headshot-container {
+    display: flex;
+    align-items: center;
+}
+
+.headshot {
+    width: 300px;
+    border-radius: 150px;
+}
+
+.project-card {
+    width: 350px;
+    height: 500px;
+    box-shadow: 5px 2px 20px grey;
+    margin: 10px;
+}
+
+.project-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+@media only screen and (max-width: 1000px) {
+    .project-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+.project-image1 {
+    margin-top: 25px;
+    width: 250px;
+}
+
+.project-image2 {
+    margin-top: 25px;
+    width: 300px;
+}
+
+.project-image3 {
+    margin-top: 25px;
+    width: 320px;
+}
+
+hr {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.project-link {
+    text-decoration: none;
+    color: #ef744b
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.hamburger {
+    display: none;
+}
+
+.hanburger:focus{
+    outline: 0;
+}
+
+@media only screen and (max-width: 1000px) {
+    .hamburger {
+        display: block;
+        border: 0;
+        background-color: transparent;
+        color: white;
+        font-size: 30px;
+        margin: 20px;
+        align-self: flex-end;
+    }
+
+    ul {
+        display: none;
+        background-color: #353746;
+        margin: 0px;
+    }
+
+    ul.show {
+        display: block;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column-reverse;
+        background-color: #353746;
+
+    }
+
+    .logo {
+        display: none;
+    }
+}
