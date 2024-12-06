@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="src/styles.css" />
+    <!-- setting the fonts that I want to use in my Portfolio -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;900&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a098c75647.js" crossorigin="anonymous"></script>
+    <title>Portfolio</title>
+    <meta charset="UTF-8" />
+</head>
+
+<body>
+    <div class="projects-section">
+        <h2 class="header-projects">Projects</h2>
+        <div class="projects-grid">
+            <!-- Project 1 -->
+            <div class="project-card">
+                <a href="https://github.com/JarrodWandrey/NPC_Gen" target="_blank">
+                    <h3 class="project-title">DND 5e NPC Generator</h3>
+                    <p class="project-description">
+                        A Python app using Tkinter, BeautifulSoup, and<br>
+                        Playwright to generate D&D NPC names and<br>
+                        descriptions. It scrapes content, compiles it into a file,<br>
+                        and displays it in a small window for easy access.
+                    </p>
+                </a>
+            </div>
+            <!-- Project 2 -->
+            <div class="project-card">
+                <a href="https://github.com/JarrodWandrey/YT_LinkDL" target="_blank">
+                    <h3 class="project-title">YouTube Audio/Video Download</h3>
+                    <p class="project-description">
+                        A YouTube downloader tool built with Tkinter<br>
+                        for the graphical user interface, yt-dlp for<br>
+                        downloading media, and a Progressbar to visually<br>
+                        track download progress.
+                    </p>
+                </a>
+            </div>
+            <!-- Project 3 -->
+            <div class="project-card">
+                <a href="https://github.com/JarrodWandrey/JarrodWandrey.github.io" target="_blank">
+                    <h3 class="project-title">Portfolio Website</h3>
+                    <p class="project-description">
+                        Built with HTML, CSS, and JavaScript,<br>
+                        serves as an interactive and visually appealing<br>
+                        showcase of your skills and projects.
+                    </p>
+                </a>
+            </div>
+        </div>
+        <a class="back-button" href="home.html">↩</a>
+    </div>
+    <!-- Page transition overlay -->
+    <div class="page-transition"></div>
+    <!-- Link to the external app.js file -->
+    <script src="src/app.js"></script>
+</body>
+
+</html>
